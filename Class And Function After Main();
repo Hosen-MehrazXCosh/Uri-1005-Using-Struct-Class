@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class ABC{
+public:
+    double A;
+    double B;
+    double Avarage;
+};
+void func(class ABC A1);
+
+int main(){
+    class ABC A1;
+    func(A1);
+}
+
+void func(ABC A1){
+cin>>A1.A;
+cin>>A1.B;
+A1.Avarage=((A1.A*3.5)+(A1.B*7.5))/(3.5+7.5);
+cout<<"MEDIA = "<<A1.Avarage<<endl;
+}
